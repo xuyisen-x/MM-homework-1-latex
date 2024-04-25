@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}
+  \def\eprint#1#2{#2}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \let\eprint\href
+\fi
+
+\bibitem[Hinz(1992)]{hinz1992pascal}
+HINZ A~M.
+\newblock Pascal's triangle and the tower of hanoi\allowbreak[J].
+\newblock The American mathematical monthly, 1992, 99\allowbreak (6): 538-544.
+
+\end{thebibliography}

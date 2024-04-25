@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{function}\PYG{+w}{ }new\PYGZus{}P\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nf}{clear\PYGZus{}symvar}\PYG{p}{(}P\PYG{p}{)}
+\PYG{+w}{    }\PYG{n}{new\PYGZus{}P}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{sym}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{);}
+
+\PYG{+w}{    }\PYG{n}{vars}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{symvar}\PYG{p}{(}\PYG{n}{P}\PYG{p}{);}
+\PYG{+w}{    }\PYG{k}{for}\PYG{+w}{ }\PYG{n+nb}{var}\PYG{p}{=}\PYG{n}{vars}
+\PYG{+w}{        }\PYG{n}{power}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{feval}\PYG{p}{(}\PYG{n}{symengine}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}degree\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{P}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb}{var}\PYG{p}{);}
+\PYG{+w}{        }\PYG{k}{if}\PYG{+w}{ }\PYG{n+nb}{mod}\PYG{p}{(}\PYG{n}{power}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{n}{power}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mi}{0}
+\PYG{+w}{            }\PYG{n}{power}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{end}
+\PYG{+w}{        }\PYG{k}{if}\PYG{+w}{ }\PYG{n+nb}{mod}\PYG{p}{(}\PYG{n}{power}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{n}{power}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mi}{0}
+\PYG{+w}{            }\PYG{n}{power}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{end}
+\PYG{+w}{        }\PYG{n}{new\PYGZus{}P}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{new\PYGZus{}P}\PYG{+w}{ }\PYG{o}{.*}\PYG{+w}{ }\PYG{n+nb}{var}\PYG{+w}{ }\PYG{o}{.\PYGZca{}}\PYG{+w}{ }\PYG{n}{power}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{end}
+
+\PYG{k}{end}
+\end{Verbatim}
